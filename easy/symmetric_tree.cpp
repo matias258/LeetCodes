@@ -45,4 +45,20 @@ public:
     }
 };
 
+/*
 
+Complejidad: 
+
+Temporal-> O(n), donde n es la cantidad de nodos en el árbol.
+Espacial-> O(h), donde h es la altura del árbol.
+
+
+La función isSymmetric llama a la función isMirror y esta última recorre recursivamente 
+cada par de nodos hijo izquierdo y derecho. En el peor de los casos, la función isMirror 
+visita todos los nodos del árbol, lo que lleva un tiempo proporcional al número de nodos en el árbol. 
+Es por eso que la complejidad temporal es O(n).
+
+En el peor de los casos, la función isMirror llama a sí misma h veces en la pila de llamadas, 
+donde h es la altura del árbol, entonces la complejidad espacial es O(h).
+
+*/
